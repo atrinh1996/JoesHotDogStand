@@ -1,0 +1,30 @@
+/* Styling rules for Joe's Hotdog Stand */
+
+body{
+    background-color:rgb(165, 5, 5);
+    background-image: url("images/annie-spratt-XIpvd4QeV2w-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main{text-align: center;}
+.main h1{color:#ffff00; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+.container{display:flex; justify-content:center; margin:auto; font-family:Verdana, Geneva, Tahoma, sans-serif; line-height:1.4;}
+
+.container h2{text-align:center; margin:auto;}
+
+.block{max-width:15%; flex-grow:1; background-color:rgba(255, 255, 255, 0.40);}
+.block ul{padding:0; list-style: none;}
+.block li{border-bottom: 1px #000000 dotted;}
+
+#food-qty, #total-display{padding-left:20%;}
+#food-cost, #actual-total{padding-right:20%;}
+#food-cost, #actual-total, #total-display {text-align: right;}
+#actual-total li:last-child, #total-display li:last-child{font-weight: bolder;}
+
+/* On mobile: display width of screen */
+@media(max-width:680px){
+    body{background-image: url("images/annie-spratt-XIpvd4QeV2w-unsplash-small.jpg"); background-repeat: repeat;}
+    .block{max-width:none}
+}
