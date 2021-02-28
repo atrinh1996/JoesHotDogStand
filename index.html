@@ -1,0 +1,51 @@
+<!-- Joe's Hotdog Stand webpage -- interactive -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charstet="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .container h2{visibility:hidden;}
+    </style>
+
+    <title>Joe's Hotdog Stand</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Joe's Hotdog Stand</h1>
+    </div>
+
+    <div class="container">
+        <h2>Your Order</h2>
+    </div>
+    
+    <!-- Put orders here -->
+    <div class="container">
+        <!-- Items ordered -->
+        <div class="block">
+            <ul id="food-qty"></ul>
+        </div>
+
+        <!-- items prices -->
+        <div class="block">
+            <ul id="food-cost"></ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="block">
+            <!-- Total/Tax name column -->
+            <ul id="total-display"></ul>
+        </div>
+
+        <!-- actual total and tax in $ -->
+        <div class="block">
+            <ul id="actual-total"></ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
